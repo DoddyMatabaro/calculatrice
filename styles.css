@@ -13,7 +13,7 @@
     border: solid black 1px;
     padding: 15px;
     width: 400px;
-    height: 450px;
+    height: 420px;
    background-color: rgb(230, 236, 236);
    margin: 50px;
 
@@ -87,6 +87,7 @@ main{
 }
 
 .col-bottom{
-    background-color: blueviolet;
+   
     grid-area: col2;
+    text-align: center;
 }
