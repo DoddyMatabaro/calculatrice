@@ -1,0 +1,79 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+
+.container {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 300px 70px;
+    grid-template-areas: "up up" "main main" "col2 col2";
+    border: solid black 1px;
+    padding: 15px;
+    width: 400px;
+    height: 450px;
+   background-color: rgb(230, 236, 236);
+   margin: 50px;
+
+}
+
+.up{
+    /* background-color: red; */
+    grid-area: up;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 50px;
+}
+ .input{
+     background-color: beige;
+     height: 30px;
+     margin: 15px;
+     border-radius: var(--main-padding);
+ }
+.menu{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    padding: 5px;
+    border-radius: var(--main-padding);
+}
+
+.menu  li{
+    list-style: none;
+    color: black;
+    display: inline-block;
+}
+
+main{
+    background-color: grey;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    margin: 10px;
+   
+}
+
+.buttoms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+ main .buttoms .buttom{
+    background-color: darkgray;
+    margin: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+ }
+.col-gauche{
+    background-color: yellow;
+    
+}
+
+.col-bottom{
+    background-color: blueviolet;
+    grid-area: col2;
+}
